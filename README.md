@@ -72,7 +72,7 @@ webdriver-manager update --version.chrome <<browser version>>
 
 * It says selenium server is not running.
 
-_Resolution would be, start selenium server (Refer to start selenium server step above).
+_Resolution would be, start selenium server (Refer to start selenium server step above)._
 
 ## Clone this project
 Clone this project to start writing tests for protractor. Checkout [protractor api](http://www.protractortest.org/#/tutorial) to start writing tests. This link has all the required documentaion references to play with protractor.
