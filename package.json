@@ -1,0 +1,26 @@
+{
+  "name": "protractor_starter",
+  "version": "1.0.0",
+  "description": "A starter for Protractor which is an end to end automation test framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pradeepkalla12/protractor_starter.git"
+  },
+  "keywords": [
+    "protractor",
+    "protractor-starter",
+    "automation",
+    "nodejs",
+    "automation"
+  ],
+  "author": "Pradeep Kalla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pradeepkalla12/protractor_starter/issues"
+  },
+  "homepage": "https://github.com/pradeepkalla12/protractor_starter#readme"
+}
