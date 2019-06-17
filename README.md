@@ -1,6 +1,6 @@
 # protractor_starter
 A starter for Protractor which is an end to end automation test framework. 
-This explanation is not intended to tell, how to write a protractor test. I am emphasizing more on how protractor works, it's setup and common problems.
+This explanation is not intended to tell, how to write a protractor test. I am emphasizing more on how protractor works, it's setup and common problems during setup.
 
 ## Features
 ### Test Like a User
@@ -49,6 +49,35 @@ This will start up a Selenium Server and will output a bunch of info logs. Your 
 
 ### Write your first protractor test
 Follow this [link](http://www.protractortest.org/#/tutorial) to write your first test. 
+
+### Run your test
+```
+ protractor <<path to the protractor configuration file>>
+```
+## Common Issues
+1) > _E/launcher - session not created: This version of ChromeDriver only supports Chrome version 75_ .
+
+* Selenium webdriver is an executable which drives system browser. Every version of browser will have its own selenium webdriver. 
+* Webdriver manager installs latest browser specific webdriver, irrespective of what version of browser available in the system. If both browser and selenium webdriver versions are mismatched, we get the above issue.
+
+_Resolution would be, either update system browser to latest version or install appropriate selenium webdriver,
+To install appropriate version of selenium webdriver (command below works for chrome) :_
+```
+webdriver-manager update --version.chrome <<browser version>>
+```
+
+2) > E/launcher - Error code: 135
+[10:05:45] E/launcher - Error message: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:4444
+[10:05:45] E/launcher - Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:4444 .
+
+* It says selenium server is not running.
+
+_Resolution would be, start selenium server (Refer to start selenium server step above).
+
+## Clone this project
+Clone this project to start writing tests for protractor. Checkout [protractor api](http://www.protractortest.org/#/tutorial) to start writing tests. This link has all the required documentaion references to play with protractor.
+
+Enjoy Protractor folks!! 
 
 
 
