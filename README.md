@@ -1,5 +1,6 @@
 # protractor_starter
-A starter for Protractor which is an end to end automation test framework.
+A starter for Protractor which is an end to end automation test framework. 
+This explanation is not intended to tell, how to write a protractor test. I am emphasizing more on how protractor works, it's setup and common problems.
 
 ## Features
 ### Test Like a User
@@ -14,7 +15,7 @@ Although Protractor documentation has a detailed explanation on how the process 
 
 Protractor Tests <----> Selenium Server <----> Browser(Chrome, Firefox etc.,)
 
-Selenium server can be a standalone server or a sauce lab server which will be getting requests from tests and makes a REST API Call(Webdriver JSON Protocol) to Browser and performs actions. Every action in tests is a REST call to browser by Selenium server. For example,
+Selenium server can be a standalone server or a sauce lab server which will be getting requests from tests and makes a REST API Call([JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol)) to Browser and performs actions. Every action in tests is a REST call to browser by Selenium server. For example,
 ```javascript
 element(by.css('button.myclass')).click();
 ```
@@ -45,6 +46,9 @@ Now start up a server with:
 webdriver-manager start
 ```
 This will start up a Selenium Server and will output a bunch of info logs. Your Protractor test will send requests to this server to control a local browser. Leave this server running to run tests. You can see information about the status of the server at http://localhost:4444/wd/hub.
+
+### Write your first protractor test
+Follow this [link](http://www.protractortest.org/#/tutorial) to write your first test. 
 
 
 
